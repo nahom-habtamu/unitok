@@ -11,7 +11,7 @@ const NavLink = ({ label , to, items }) => {
             data-toggle="dropdown" 
             aria-haspopup="true" 
             aria-expanded="false"
-            href=""
+            href="/"
           > {label} 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path 

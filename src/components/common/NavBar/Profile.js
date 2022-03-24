@@ -18,7 +18,7 @@ const Profile = () => {
       <div className="header__action header__action--profile">
         <a 
           className="header__profile-btn header__profile-btn--verified" 
-          href="" 
+          href="/" 
           role="button" 
           id="dropdownMenuProfile" 
           data-toggle="dropdown" 
