@@ -20,12 +20,42 @@ const TopSellers = () => {
         price : 600,
         sellerUserName : "@kebede"
     },
+    {
+        sellerImage : "img/avatars/avatar.jpg",
+        price : 600,
+        sellerUserName : "@kebede"
+    },
+    {
+        sellerImage : "img/avatars/avatar.jpg",
+        price : 600,
+        sellerUserName : "@kebede"
+    },
+    {
+        sellerImage : "img/avatars/avatar.jpg",
+        price : 600,
+        sellerUserName : "@kebede"
+    },
+    {
+        sellerImage : "img/avatars/avatar.jpg",
+        price : 600,
+        sellerUserName : "@kebede"
+    },
+    {
+        sellerImage : "img/avatars/avatar.jpg",
+        price : 600,
+        sellerUserName : "@kebede"
+    },
+    {
+        sellerImage : "img/avatars/avatar.jpg",
+        price : 600,
+        sellerUserName : "@kebede"
+    },
     
   ];
 
   const buildTopSellers = () => {
     return sellers.map((e, index) => {
-        return <TopSeller seller={{ ...e, index: index + 1 }} />;
+        return <TopSeller key={index} seller={{ ...e, index: index + 1 }} />;
     });
   }
 

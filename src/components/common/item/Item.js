@@ -1,9 +1,9 @@
-const Auction = () => {
+const Item = ({time}) => {
     return(
      <div className="card">
         <a href="item.html" className="card__cover">
             <img src="img/cover/cover1.jpg" alt="" />
-            <span className="card__time">15 minutes left</span>
+            {time && <span className="card__time">15 minutes left</span>}
         </a>
         <h3 className="card__title"><a href="item.html">Walking on Water</a></h3>
         <div className="card__author card__author--verified">
@@ -24,4 +24,4 @@ const Auction = () => {
   );
 }
 
-export default Auction;
+export default Item;

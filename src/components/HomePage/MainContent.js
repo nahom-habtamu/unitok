@@ -1,15 +1,24 @@
 import React from 'react'
 import Hero from './Hero';
-import Auctions from './Auctions';
+import Items from '../common/item/Items';
 import TopSellers from './TopSellers';
 
 const MainContent = () => {
   return (
-    <main class="main">
+    <main className="main">
       <Hero/>
       <div className='container'>
-        <Auctions/>
+        <Items 
+          fromExplore={false} 
+          title="Live Auctions" 
+          to='explore'
+        />
         <TopSellers/>
+        <Items 
+          fromExplore={true} 
+          title="Explore" 
+          to='explore'
+        />
       </div>
     </main>
   );

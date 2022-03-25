@@ -7,8 +7,8 @@ const TopSeller = (props) => {
 
   return (
     <li>
-        <span class="sellers-list__number">{index}</span>
-        <div class="sellers-list__author sellers-list__author--verified">
+        <span className="sellers-list__number">{index}</span>
+        <div className="sellers-list__author sellers-list__author--verified">
             <img src={sellerImage} alt=""/>
             <Link to="/author">{sellerUserName}</Link>
             <span>{price} ETH</span>
