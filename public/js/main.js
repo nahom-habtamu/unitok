@@ -1,6 +1,5 @@
-$(document).ready(function () {
+const loader  = function() {
 	"use strict"; // start of use strict
-
 	/*==============================
 	Menu
 	==============================*/
@@ -385,5 +384,8 @@ $(document).ready(function () {
 			continuousScrolling: false,
 		});
 	}
+}
 
-});
+$(document).ready(() => {
+	$.initialize(".main", loader);
+})
