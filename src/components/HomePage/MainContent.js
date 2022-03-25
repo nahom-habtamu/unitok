@@ -1,8 +1,9 @@
 import React from 'react'
 import Hero from './Hero';
-import Items from '../common/item/Items';
+import Items from '../common/Item/Items';
 import TopSellers from './TopSellers';
 import HotCollections from './HotCollections';
+import GetStartedTab from './GetStartedTab';
 
 const MainContent = () => {
   return (
@@ -21,9 +22,11 @@ const MainContent = () => {
           to='explore'
         />
         <HotCollections/>
+        <GetStartedTab/>
       </div>
     </main>
   );
 }
 
 export default MainContent;
+
