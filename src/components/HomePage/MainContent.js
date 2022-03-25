@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero';
 import Items from '../common/item/Items';
 import TopSellers from './TopSellers';
+import HotCollections from './HotCollections';
 
 const MainContent = () => {
   return (
@@ -19,6 +20,7 @@ const MainContent = () => {
           title="Explore" 
           to='explore'
         />
+        <HotCollections/>
       </div>
     </main>
   );

@@ -3,7 +3,7 @@ const Item = ({time}) => {
      <div className="card">
         <a href="item.html" className="card__cover">
             <img src="img/cover/cover1.jpg" alt="" />
-            {time && <span className="card__time">15 minutes left</span>}
+            {time && <span className="card__time">{time}</span>}
         </a>
         <h3 className="card__title"><a href="item.html">Walking on Water</a></h3>
         <div className="card__author card__author--verified">

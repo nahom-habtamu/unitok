@@ -11,11 +11,13 @@ const Items = ({title,to,fromExplore}) => {
                 <div 
                   className=
                   {`main__carousel main__carousel${fromExplore ? '--explore' : '--live'} owl-carousel`} 
-                  id={`${ fromExplore ? 'explore' : 'live'} `}>
+                  id={`${ fromExplore ? 'explore' : 'live'}`}>
                     {fromExplore ? <Item/> : <Item time="15 minutes left"/>}
                     {fromExplore ? <Item/> : <Item time="15 minutes left"/>}
                     {fromExplore ? <Item/> : <Item time="15 minutes left"/>}
-                    {fromExplore ? <Item/> : <Item time="15 minutes left"/>}
+                    {fromExplore ? <Item/> : <Item time="17 minutes left"/>}
+                    {fromExplore ? <Item/> : <Item time="17 minutes left"/>}
+                    {fromExplore ? <Item/> : <Item time="17 minutes left"/>}
                 </div>
 
                 <button className="main__nav main__nav--prev" 
