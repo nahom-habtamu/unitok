@@ -1,12 +1,13 @@
 import React from 'react';
 import NotFoundPageBox from './NotFoundPageBox';
-import NotFoundPageHeaderLinks from './NotFoundPageHeaderLinks';
+import BreadCrumb from '../common/BreadCrumb';
+
 const MainContent = () => {
   return (
     <div className='main'>
         <div className='container'>
             <div className="row row--grid">
-                <NotFoundPageHeaderLinks/>
+                <BreadCrumb active="Home" link='/' nonActive="Error 404"/>
                 <NotFoundPageBox/>
             </div>
         </div>
