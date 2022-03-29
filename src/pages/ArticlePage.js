@@ -1,9 +1,9 @@
 import React from 'react';
 import Footer from '../components/common/Footer';
 import NavBar from '../components/common/NavBar';
-import MainContent from '../components/ActivityPage';
+import MainContent from '../components/ArticlePage';
 
-const ActivityPage = () => {
+const ArticlePage = () => {
   return (
     <>
         <NavBar/>
@@ -13,4 +13,4 @@ const ActivityPage = () => {
   );
 }
 
-export default ActivityPage;
+export default ArticlePage;
