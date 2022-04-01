@@ -7,6 +7,7 @@ import ArticlePage from './ArticlePage';
 import ProfilePage from './ProfilePage';
 import HomePage from './HomePage';
 import NotFoundPage from './NotFoundPage';
+import BlogsPage from './BlogsPage';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path="/article" element={<ArticlePage />} />
         <Route exact path="/author" element={<ProfilePage />} />
         <Route exact path="/authors" element={<CreatorsPage />} />
+        <Route exact path="/blogs" element={<BlogsPage/>} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
