@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-
+import CreatorsPage from './CreatorsPage';
 import ActivityPage from './ActivityPage';
 import ArticlePage from './ArticlePage';
 import ProfilePage from './ProfilePage';
@@ -16,6 +16,7 @@ const App = () => {
         <Route exact path="/activity" element={<ActivityPage />} />
         <Route exact path="/article" element={<ArticlePage />} />
         <Route exact path="/author" element={<ProfilePage />} />
+        <Route exact path="/authors" element={<CreatorsPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

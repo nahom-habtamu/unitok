@@ -1,5 +1,5 @@
 import React from 'react';
-import DummyAuthor from '../../constants/DummyAuthor';
+import DummyAuthors from '../../constants/DummyAuthors';
 import AuthorInformation from './AuthorInformation';
 import AuthorPageHeroImage from './AuthorPageHeroImage';
 import ManageAuthor from './ManageAuthor';
@@ -10,7 +10,7 @@ const MainContent = () => {
             <AuthorPageHeroImage />
             <div className='container'>
                 <div className='row row--grid'>
-                    <AuthorInformation author={DummyAuthor} />
+                    <AuthorInformation author={DummyAuthors[0]} />
                     <ManageAuthor />
                 </div>
             </div>
