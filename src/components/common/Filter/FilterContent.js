@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 
 import ClearFiltersButton from './ClearFiltersButton';
 import FilterItem from './FilterItem';
-import ActivityFilterItems from '../../constants/ActivityFilterItems';
 
 
-const FilterContent = () => {
+const FilterContent = (props) => {
 
-    const [filterItems, setFilterItems] = useState(ActivityFilterItems)
-    
+    const [filterItems, setFilterItems] = useState(props.filterItems)
+
     const handleClearingAllFilters = () => {
         const changedList = filterItems.map((item) => {
             return {

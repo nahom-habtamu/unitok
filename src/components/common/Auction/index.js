@@ -1,4 +1,4 @@
-const Item = ({time}) => {
+const Auction = ({time}) => {
     return(
      <div className="card">
         <a href="item.html" className="card__cover">
@@ -24,4 +24,4 @@ const Item = ({time}) => {
   );
 }
 
-export default Item;
+export default Auction;

@@ -1,6 +1,6 @@
 import React from 'react'
-import Item from '.';
-import ItemsTitle from './ItemsTitle';
+import Auction from '.';
+import ItemsTitle from './AuctionsTitle';
 
 const Items = ({title,to,fromExplore}) => {
   return (
@@ -12,12 +12,12 @@ const Items = ({title,to,fromExplore}) => {
                   className=
                   {`main__carousel main__carousel${fromExplore ? '--explore' : '--live'} owl-carousel`} 
                   id={`${ fromExplore ? 'explore' : 'live'}`}>
-                    {fromExplore ? <Item/> : <Item time="15 minutes left"/>}
-                    {fromExplore ? <Item/> : <Item time="15 minutes left"/>}
-                    {fromExplore ? <Item/> : <Item time="15 minutes left"/>}
-                    {fromExplore ? <Item/> : <Item time="17 minutes left"/>}
-                    {fromExplore ? <Item/> : <Item time="17 minutes left"/>}
-                    {fromExplore ? <Item/> : <Item time="17 minutes left"/>}
+                    {fromExplore ? <Auction/> : <Auction time="15 minutes left"/>}
+                    {fromExplore ? <Auction/> : <Auction time="15 minutes left"/>}
+                    {fromExplore ? <Auction/> : <Auction time="15 minutes left"/>}
+                    {fromExplore ? <Auction/> : <Auction time="17 minutes left"/>}
+                    {fromExplore ? <Auction/> : <Auction time="17 minutes left"/>}
+                    {fromExplore ? <Auction/> : <Auction time="17 minutes left"/>}
                 </div>
 
                 <button className="main__nav main__nav--prev" 

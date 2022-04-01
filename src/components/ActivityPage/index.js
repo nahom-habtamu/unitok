@@ -2,7 +2,9 @@ import React from 'react';
 
 import BreadCrumb from '../common/BreadCrumb';
 import Activities from './Activities';
-import Filters from './Filters';
+import Filters from '../common/Filter';
+
+import ActivityFilterItems from '../../constants/ActivityFilterItems';
 
 const MainContent = () => {
     return (
@@ -11,7 +13,9 @@ const MainContent = () => {
                 <div className="row">
                     <BreadCrumb active="Home" link='/' nonActive="Activity" />
                     <Activities />
-                    <Filters />
+                    <div className="col-12 col-xl-3 order-xl-2">
+                        <Filters filterItems={ActivityFilterItems} />
+                    </div>
                 </div>
             </div>
         </div>

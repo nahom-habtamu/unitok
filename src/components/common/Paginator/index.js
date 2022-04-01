@@ -1,0 +1,62 @@
+import React, { useState } from 'react';
+import NextIconButton from './NextIconButton';
+import PrevIconButton from './PrevIconButton';
+import PaginationItem from './PaginationItem';
+
+const Paginator = ({ totalElements, activePage, pageSize }) => {
+
+    const [currentPage, setCurrentPage] = useState(activePage)
+
+    const handleActivePaginationItemChanged = (newItem) => {
+        if (newItem > 0 && newItem <= Math.floor(totalElements / pageSize))
+            setCurrentPage(newItem);
+    }
+
+    const getItemsToDraw = () => {
+        const itemsCount = Math.floor(totalElements / pageSize);
+        const items = [];
+        for (let i = 1; i <= itemsCount; i++) {
+            items.push(i);
+        }
+        return items;
+    }
+
+    const buildPaginationRow = () => {
+        const items = getItemsToDraw();
+        return items.map((e) =>
+            <PaginationItem
+                item={e}
+                currentPage={currentPage}
+                onClick={() => handleActivePaginationItemChanged(e)}
+            />
+        )
+    }
+
+    return (
+        <div className="paginator">
+            <span
+                className="paginator__pages">
+                {`${pageSize} from ${totalElements}`}
+            </span>
+
+            <ul className="paginator__list">
+                <PrevIconButton
+                    onPrevClicked={
+                        () => handleActivePaginationItemChanged(currentPage - 1)
+                    }
+                />
+                {
+                    buildPaginationRow()
+                }
+                <NextIconButton
+                    onNextClicked={
+                        () => handleActivePaginationItemChanged(currentPage + 1)
+                    }
+                />
+            </ul>
+        </div>
+    )
+}
+
+export default Paginator;
+

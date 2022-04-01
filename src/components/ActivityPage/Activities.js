@@ -1,7 +1,7 @@
 import React from 'react';
-import Activity from './Activity';
+import Activity from '../common/Activity';
 import ActivityTitle from './ActivityTitle';
-import LoadMoreActivitiesButton from './LoadMoreActivitiesButton';
+import LoadMoreActivitiesButton from '../common/Activity/LoadMoreActivitiesButton';
 
 import DummyActivities from '../../constants/DummyActivities';
 
@@ -9,10 +9,12 @@ const Activities = () => {
 
     const buildActivityList = () => {
         return DummyActivities.map(activity =>
-            <Activity
-                activity={activity}
-                key={activity.id}
-            />
+            <div className="col-12 col-lg-6">
+                <Activity
+                    activity={activity}
+                    key={activity.id}
+                />
+            </div>
         );
     }
 
@@ -25,7 +27,7 @@ const Activities = () => {
                         buildActivityList()
                     }
                     {
-                        DummyActivities.length > 6 && 
+                        DummyActivities.length > 6 &&
                         <LoadMoreActivitiesButton />
                     }
                 </div>

@@ -1485,12 +1485,12 @@ body::-webkit-scrollbar-thumb {
 .paginator__list li:last-child {
   margin-right: 0;
 }
-.paginator__list li.active a {
+.paginator__list li.active span {
   color: #6164ff;
   cursor: default;
   font-weight: 500;
 }
-.paginator__list a {
+.paginator__list span {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1504,16 +1504,16 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
 }
-.paginator__list a svg {
+.paginator__list span svg {
   width: 22px;
   height: auto;
   fill: #bdbdbd;
   transition: fill 0.5s ease;
 }
-.paginator__list a:hover {
+.paginator__list span:hover {
   color: #6164ff;
 }
-.paginator__list a:hover svg {
+.paginator__list span:hover svg {
   fill: #6164ff;
 }
 @media (min-width: 768px) {
