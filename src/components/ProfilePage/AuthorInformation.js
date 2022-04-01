@@ -6,7 +6,7 @@ const AuthorInformation = ({ author }) => {
         <div className="col-12 col-xl-3">
             <div className="author author--page">
                 <div className="author__meta">
-                    <a className="author__avatar author__avatar--verified" href=''>
+                    <a className="author__avatar author__avatar--verified" href='/author'>
                         <img src={author.image} alt="" />
                     </a>
                     <h1 className="author__name">
