@@ -19,7 +19,10 @@ const Created = () => {
                     <Auction />
                 </div>
             </div>
-            <Paginator totalElements={100} activePage={1} pageSize={10}/>
+            <Paginator 
+                totalElements={100} 
+                initialActivePage={1} 
+                pageSize={10} />
         </div>
     );
 };

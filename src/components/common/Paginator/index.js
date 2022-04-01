@@ -3,17 +3,17 @@ import NextIconButton from './NextIconButton';
 import PrevIconButton from './PrevIconButton';
 import PaginationItem from './PaginationItem';
 
-const Paginator = ({ totalElements, activePage, pageSize }) => {
+const Paginator = ({ totalElements, initialActivePage, pageSize }) => {
 
-    const [currentPage, setCurrentPage] = useState(activePage)
+    const [currentPage, setCurrentPage] = useState(initialActivePage)
 
     const handleActivePaginationItemChanged = (newItem) => {
-        if (newItem > 0 && newItem <= Math.floor(totalElements / pageSize))
+        if (newItem > 0 && newItem <= Math.ceil(totalElements / pageSize))
             setCurrentPage(newItem);
     }
 
     const getItemsToDraw = () => {
-        const itemsCount = Math.floor(totalElements / pageSize);
+        const itemsCount = Math.ceil(totalElements / pageSize);
         const items = [];
         for (let i = 1; i <= itemsCount; i++) {
             items.push(i);
