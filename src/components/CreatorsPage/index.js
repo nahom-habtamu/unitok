@@ -5,7 +5,7 @@ import DummyAuthors from '../../constants/DummyAuthors';
 import BreadCrumb from '../common/BreadCrumb';
 import Authors from './Authors';
 import AuthorsTitle from './AuthorsTitle';
-import FilterByKeywordAndDropDown from './FIlterByKeywordAndDropDown';
+import FilterByKeywordAndDropDown from '../common/FIlterByKeywordAndDropDown';
 import Paginator from '../common/Paginator';
 
 const MainContent = () => {

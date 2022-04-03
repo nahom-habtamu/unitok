@@ -10,8 +10,8 @@ const FilterByKeywordAndDropDown = (
     }) => {
 
     const [keyword, setKeyword] = useState("");
-    const [dropDownOne, setDropDownOne] = useState("");
-    const [dropDownTwo, setDropDownTwo] = useState("");
+    const [dropDownOne, setDropDownOne] = useState(dropDownOneItems[0]);
+    const [dropDownTwo, setDropDownTwo] = useState("0");
 
     useEffect(() => {
         onFilterChanged({
@@ -28,7 +28,7 @@ const FilterByKeywordAndDropDown = (
 
     const buildDropDownOne = () => {
         return dropDownOneItems.map(e =>
-            <option value={e}>{`By ${e}`}</option>
+            <option value={e}>{`${e}`}</option>
         );
     }
 
