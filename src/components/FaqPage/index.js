@@ -20,7 +20,6 @@ const MainContent = () => {
                 />
                 <FaqHeader/>
                 <KnowledgeList knowledgeList={KnowledgeItems}/>
-
             </div>
 
             <div className='row row--grid'>

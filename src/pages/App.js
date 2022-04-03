@@ -10,6 +10,7 @@ import NotFoundPage from './NotFoundPage';
 import BlogsPage from './BlogsPage';
 import ExplorePage from './ExplorePage';
 import FaqPage from './FaqPage';
+import AuctionDetailPage from './AuctionDetailPage';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route exact path="/blogs" element={<BlogsPage/>} />
         <Route exact path="/explore" element={<ExplorePage/>} />
         <Route exact path="/faq" element={<FaqPage/>} />
+        <Route exact path="/auction" element={<AuctionDetailPage/>} />
         <Route path='*' element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>
