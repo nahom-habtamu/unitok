@@ -8,21 +8,27 @@ import ProfilePage from './ProfilePage';
 import HomePage from './HomePage';
 import NotFoundPage from './NotFoundPage';
 import BlogsPage from './BlogsPage';
+import ExplorePage from './ExplorePage';
+import FaqPage from './FaqPage';
+import AuctionDetailPage from './AuctionDetailPage';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/activity" element={<ActivityPage />} />
-        <Route exact path="/article" element={<ArticlePage />} />
-        <Route exact path="/author" element={<ProfilePage />} />
-        <Route exact path="/authors" element={<CreatorsPage />} />
+        <Route exact path="/activity" element={<ActivityPage/>} />
+        <Route exact path="/article" element={<ArticlePage/>} />
+        <Route exact path="/author" element={<ProfilePage/>} />
+        <Route exact path="/authors" element={<CreatorsPage/>} />
         <Route exact path="/blogs" element={<BlogsPage/>} />
-        <Route path='*' element={<NotFoundPage />} />
+        <Route exact path="/explore" element={<ExplorePage/>} />
+        <Route exact path="/faq" element={<FaqPage/>} />
+        <Route exact path="/auction" element={<AuctionDetailPage/>} />
+        <Route path='*' element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

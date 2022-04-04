@@ -1,7 +1,7 @@
 const Auction = ({time}) => {
     return(
      <div className="card">
-        <a href="item.html" className="card__cover">
+        <a href="/auction/id" className="card__cover">
             <img src="img/cover/cover1.jpg" alt="" />
             {time && <span className="card__time">{time}</span>}
         </a>
