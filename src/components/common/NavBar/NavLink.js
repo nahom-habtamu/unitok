@@ -33,7 +33,7 @@ const NavLink = ({ label , to, items }) => {
             className="dropdown-menu header__nav-menu" 
             aria-labelledby={` ${ label ? "dropdownMenuHome" : "dropdownMenu2"} `}>
               {
-                items.map(e => <li key={e}><Link to={`/${e.toLowerCase()}`}>{e}</Link></li>)
+                items.map(e => <li key={e}><Link to={`/${e.toLowerCase().replace(" ","")}`}>{e}</Link></li>)
               }
           </ul>
         }

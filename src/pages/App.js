@@ -12,6 +12,7 @@ import ExplorePage from './ExplorePage';
 import FaqPage from './FaqPage';
 import AuctionDetailPage from './AuctionDetailPage';
 import ContactsPage from './ContactsPage';
+import ForgotPage from './ForgotPage';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route exact path="/faq" element={<FaqPage/>} />
         <Route exact path="/auction" element={<AuctionDetailPage/>} />
         <Route exact path="/contacts" element={<ContactsPage/>} />
+        <Route exact path="/forgotpassword" element={<ForgotPage/>} />
         <Route path='*' element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>

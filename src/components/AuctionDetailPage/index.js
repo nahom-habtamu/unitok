@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import AuctionDetailTitle from './AuctionDetailTitle';
 import BreadCrumb from '../common/BreadCrumb';
 import AuctionShare from './AuctionShare';
