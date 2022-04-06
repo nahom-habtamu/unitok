@@ -4,7 +4,7 @@ import BreadCrumb from '../common/BreadCrumb';
 import ContactsForm from './ContactsForm';
 import ContactsPageTitle from './ContactsPageTitle';
 import ContactsSideBar from './ContactsSideBar';
-import Partners from './Partners';
+import Partners from '../common/Partners';
 
 const MainContent = () => {
   return (

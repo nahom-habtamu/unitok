@@ -13,6 +13,7 @@ import FaqPage from './FaqPage';
 import AuctionDetailPage from './AuctionDetailPage';
 import ContactsPage from './ContactsPage';
 import ForgotPage from './ForgotPage';
+import PrivacyPage from './PrivacyPage';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route exact path="/auction" element={<AuctionDetailPage/>} />
         <Route exact path="/contacts" element={<ContactsPage/>} />
         <Route exact path="/forgotpassword" element={<ForgotPage/>} />
+        <Route exact path="/privacypolicy" element={<PrivacyPage/>} />
         <Route path='*' element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>
