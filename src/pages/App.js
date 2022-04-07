@@ -16,6 +16,7 @@ import ForgotPage from './ForgotPage';
 import PrivacyPage from './PrivacyPage';
 import SignUpPage from './SignUpPage';
 import SignInPage from './SignInPage';
+import CreateAuctionPage from './CreateAuctionPage';
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route exact path="/privacypolicy" element={<PrivacyPage />} />
         <Route exact path="/signup" element={<SignUpPage />} />
         <Route exact path="/signin" element={<SignInPage />} />
+        <Route exact path="/create" element={<CreateAuctionPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

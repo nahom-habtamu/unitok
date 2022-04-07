@@ -1,21 +1,25 @@
 import React from 'react';
+
 import DummyAuthors from '../../constants/DummyAuthors';
 import AuthorInformation from '../common/AuthorInformation';
-import AuthorPageHeroImage from './AuthorPageHeroImage';
-import ManageAuthor from './ManageAuthor';
+import AddAuctionForm from './AddAuctionForm';
 
 const MainContent = () => {
+
     return (
         <main className='main'>
-            <AuthorPageHeroImage />
+            <div
+                className='main__author'
+                data-bg="img/bg/bg.png"
+            />
             <div className='container'>
                 <div className='row row--grid'>
                     <AuthorInformation author={DummyAuthors[0]} />
-                    <ManageAuthor />
+                    <AddAuctionForm />
                 </div>
             </div>
         </main>
-    )
+    );
 }
 
 export default MainContent;
